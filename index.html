@@ -3,43 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entregables</title>
+    <title>Etheria</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: yellow;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
             color: white;
-            padding: 1em;
-            text-align: center;
         }
-        section {
-            padding: 1em;
-            border-bottom: 1px solid #ddd;
-        }
-        h2 {
-            color: #4CAF50;
+        .section {
+            padding: 100px 0;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Entregables</h1>
-    </header>
-    <section>
-        <h2>Entregable 1</h2>
-        <p>Chinos, chinos, chinos</p>
-    </section>
-    <section>
-        <h2>Entregable 2</h2>
-        <p>Descripción del segundo entregable.</p>
-    </section>
-    <section>
-        <h2>Entregable 3</h2>
-        <p>Descripción del tercer entregable.</p>
-    </section>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Etheria</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Acerca de</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container text-center section" id="home">
+        <h1 class="animate__animated animate__fadeIn">Bienvenido a Etheria</h1>
+        <p class="animate__animated animate__fadeInUp">Descubre un mundo lleno de posibilidades.</p>
+        <button class="btn btn-primary" onclick="animateText()">¡Comienza!</button>
+    </div>
+
+    <div class="container text-center section" id="about">
+        <h2 class="animate__animated animate__slideInLeft">Acerca de Etheria</h2>
+        <p class="animate__animated animate__slideInRight">Etheria es un proyecto que busca conectar a las personas a través de la tecnología y la creatividad.</p>
+    </div>
+
+    <div class="container text-center section" id="contact">
+        <h2 class="animate__animated animate__bounceIn">Contacto</h2>
+        <p class="animate__animated animate__bounceInUp">¡Nos encantaría saber de ti!</p>
+        <form>
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Tu correo electrónico" required>
+            </div>
+            <button type="submit" class="btn btn-success">Enviar</button>
+        </form>
+    </div>
+
+    <footer class="text-center bg-dark text-white py-4">
+        <p>&copy; 2024 Etheria. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script>
+        function animateText() {
+            anime({
+                targets: '.section h1',
+                translateY: -50,
+                opacity: [0, 1],
+                duration: 1500,
+                easing: 'easeInOutQuad'
+            });
+        }
+    </script>
 </body>
 </html>
