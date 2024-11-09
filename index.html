@@ -6,157 +6,71 @@
     <title>Etheria</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <style>
-        body {
-            background: linear-gradient(to right, #00c6ff, #0072ff);
-            color: white;
-        }
-        .section {
-            padding: 100px 0;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al CSS externo -->
 </head>
 <body>
-    <header>
-        <h1>Entregables</h1>
+    <header class="text-center py-5 bg-primary text-white">
+        <h1 class="display-4">Entregables</h1>
     </header>
-    <section>
-        <h2>Entregable 0</h2>
-        <p>Nombre del proyecto:</p>
-        <p>Descripción del proyecto:</p>
-        <p>Visión del producto: Crear un sistema que facilite la organización, registro y monitoreo de eventos deportivos, permitiendo la administración de inscripciones, sesiones y reconocimiento de competidores.</p>
-        <p>Perspectiva del producto: El sistema será una plataforma que centralizará la información de eventos deportivos recurrentes, incluyendo la gestión de competidores, instructores y sesiones, con capacidad de generar reportes de resultados.</p>
-        <p>Funciones del producto:</p>
-        <ul>
-            <li>Registro de nuevos eventos y sesiones.</li>
-            <li>Administración de competidores y sus historiales.</li>
-            <li>Generación de reportes de rendimiento.</li>
-            <li>Emisión de reconocimientos para competidores destacados.</li>
-            <li>Gestión de permisos para instructores.</li>
-        </ul>
-        <p>Objetivos del proyecto:</p>
-        <ul>
-            <li>Facilitar el registro de eventos deportivos y la inscripción de competidores.</li>
-            <li>Permitir a los instructores registrar y monitorear el desempeño de competidores en cada sesión.</li>
-            <li>Generar reportes históricos de competidores para seguimiento de progreso.</li>
-            <li>Implementar un sistema de reconocimiento descargable para los competidores premiados.</li>
-        </ul>
-        <p>Definición de Stakeholders:</p>
-        <ul>
-            <li>Cliente: Club de leones</li>
-            <li>Actores:</li>
-            <ul>
-                <li>Competidores: Participantes inscritos en los eventos, de escuelas afiliadas o diferentes.</li>
-                <li>Instructores: Encargados de registrar los resultados de las sesiones.</li>
-                <li>Administradores del sistema: Encargados de gestionar el acceso y supervisar el sistema.</li>
-            </ul>
-        </ul>
-        <p>Equipo de desarrollo:</p>
-        <ul>
-            <li>Desarrolladores de software.</li>
-            <li>Diseñadores de interfaz de usuario.</li>
-            <li>Administrador de bases de datos.</li>
-            <li>Jefe de proyecto o líder de desarrollo.</li>
-        </ul>
-        <p>Modelo de Procesos de desarrollo:</p>
-        <ul>
-            <li>Cronograma:</li>
-            <ul>
-                <li>3 iteraciones de 2 semanas cada una.</li>
-            </ul>
-            <li>Hitos y artefactos del proyecto:</li>
-            <ul>
-                <li>Sprint 1: Casos de Uso o Narrativa + Modelo de los Datos + Diseño de GUI + Pruebas de Aceptación + Estimación en HIP + orden</li>
-                <li>Sprint 2. Historias de Usuario + Modelo de los Datos + Diseño de GUI + Pruebas de Aceptación + Estimación en HIP + orden</li>
-                <li>Sprint 3. Pruebas de Aceptación + Modelo de los Datos + Diseño de GUI + Estimación en HIP + orden</li>
-            </ul>
-        </ul>
-        <p>Herramientas de software empleadas:</p>
-        <ul>
-            <li>Lenguajes de programación:</li>
-            <ul>
-                <li>Frontend: HTML, CSS, JavaScript.</li>
-                <li>Backend: PHP</li>
-            </ul>
-            <li>Sistema gestor de bases de datos: MySQL.</li>
-            <li>Software de modelado para UML: Visual Paradigm</li>
-            <li>Control de versiones: Git y GitHub.</li>
-            <li>Herramientas de colaboración: Trello (para gestión de tareas y seguimiento ágil).</li>
-            <li>Entorno de desarrollo: Visual Studio Code, Eclipse.</li>
-        </ul>
-        <p>REQUERIMIENTOS</p>
-        <p>Requerimientos Funcionales</p>
-        <ul>
-            <li>RF1. Registro de eventos: El sistema debe permitir que los usuarios con rol de administrador registren nuevos eventos deportivos, debiendo ingresar los siguientes campos obligatorios:</li>
-            <ul>
-                <li>Nombre del evento (hasta 100 caracteres).</li>
-                <li>Fecha de inicio y fin de inscripción (formato dd/mm/aaaa).</li>
-                <li>Fecha de inicio y fin del evento (formato dd/mm/aaaa).</li>
-                <li>Horario del evento (formato 24 horas).</li>
-                <li>Modalidades de participación (opciones: individual, relevos, equipo).</li>
-                <li>Costo de inscripción (número decimal de hasta dos decimales).</li>
-                <li>Requisitos de participación (texto de hasta 500 caracteres).</li>
-                <li>Reglas del evento (texto de hasta 1000 caracteres).</li>
-            </ul>
-            <li>RF2. Inscripción de competidores: El sistema debe permitir que el instructor registre competidores en un evento específico, ingresando los siguientes datos obligatorios:</li>
-            <ul>
-                <li>Nombre completo del competidor (hasta 100 caracteres).</li>
-                <li>Fecha de nacimiento (formato dd/mm/aaaa).</li>
-                <li>Número de identificación único.</li>
-                <li>Género (opciones: masculino o femenino).</li>
-                <li>Categoría (opciones: niños, jóvenes, adultos).</li>
-            </ul>
-            <li>RF3. Registro de desempeño: Los instructores asignados a un evento deben poder registrar el desempeño de cada competidor en cada sesión de dicho evento, incluyendo los campos de:</li>
-            <ul>
-                <li>Distancia recorrida (en metros, con precisión de hasta dos decimales).</li>
-                <li>Tiempo cronometrado (en segundos, con precisión de hasta dos decimales).</li>
-            </ul>
-            <li>RF4. Modificación de fechas de eventos: Solo los administradores deben poder modificar las fechas de inicio y fin de inscripción, así como las fechas de inicio y fin de duración de un evento registrado.</li>
-            <li>RF5. Agregar eventos adicionales: El sistema debe permitir a los administradores agregar eventos deportivos nuevos que no se encuentren en la lista predefinida, con la opción de definir todos los campos especificados en el requerimiento 1.</li>
-            <li>RF6. Gestión de modalidades: El sistema debe permitir que los administradores configuren las modalidades de participación (individual, relevos, equipo) por cada evento y registren datos de desempeño para cada modalidad por separado.</li>
-            <li>RF7. Generación de reportes de resultados: El sistema debe generar reportes con los tres mejores lugares de cada evento, por categoría y modalidad, mostrando nombre del competidor, distancia o tiempo registrado y posición obtenida (primero, segundo o tercer lugar).</li>
-            <li>RF8. Registro de sesiones fuera de calendario: El sistema debe permitir a usuarios con rol de instructor administrador registrar sesiones fuera del calendario de un evento, solicitando que se especifique un motivo de modificación en un campo de texto obligatorio de hasta 200 caracteres.</li>
-            <li>RF9. Generación de convocatorias: El sistema debe permitir a los administradores generar convocatorias en formato PDF para cada evento, con los campos de nombre del evento, fechas de inscripción, fechas de duración, horarios, modalidades de participación, costos de inscripción, requisitos y reglas.</li>
-            <li>RF10. Consulta de estadísticas de desempeño: El sistema debe permitir que los administradores e instructores consulten estadísticas de desempeño de los competidores filtrando por categoría, modalidad y rango de fechas. Los resultados deben presentarse en un formato de tabla que incluya el nombre del competidor, fecha de la sesión, distancia recorrida y tiempo registrado.</li>
-            <li>RF11. Registro de instructores: El sistema debe permitir que los administradores registren instructores con los siguientes datos obligatorios:</li>
-            <ul>
-                <li>Nombre completo del instructor (hasta 100 caracteres).</li>
-                <li>Número de identificación único.</li>
-                <li>Cargo (opciones: instructor o responsable).</li>
-                <li>Eventos asignados (selección múltiple de eventos registrados en el sistema).</li>
-            </ul>
-            <li>RF12. Gestión de competidores eliminados: El sistema debe permitir a los administradores eliminar competidores de un evento específico. Cuando un competidor sea eliminado, se deberá registrar la razón de la eliminación en un campo de texto obligatorio de hasta 300 caracteres. Además, el sistema deberá notificar al competidor y al instructor asociado sobre la eliminación a través de un correo electrónico automático.</li>
-        </ul>
-        <p>Requerimientos No Funcionales</p>
-        <ul>
-            <li>RNF1. Interfaz adaptable: La interfaz de usuario debe adaptarse automáticamente a dispositivos de escritorio y móviles, proporcionando una experiencia de usuario consistente en cualquier tamaño de pantalla.</li>
-            <li>RNF2. Soporte de concurrencia: El sistema debe soportar hasta 100 usuarios concurrentes sin afectar la integridad de los datos de inscripción o de registro de desempeño de competidores, evitando conflictos de escritura.</li>
-            <li>RNF3. Seguridad de datos personales: El sistema debe almacenar toda la información personal de competidores, instructores y administradores en una base de datos encriptada, cumpliendo con la Ley General de Protección de Datos Personales.</li>
-            <li>RNF4. Velocidad de generación de reportes: El sistema debe generar y presentar reportes de desempeño y resultados en un tiempo máximo de 5 segundos desde la solicitud.</li>
-            <li>RNF5. Exportación de reportes: El sistema debe permitir a los usuarios con rol de administrador exportar reportes de desempeño y resultados en formatos PDF y Excel, aplicando filtros por categoría, modalidad y fecha para la información exportada.</li>
-        </ul>
-        <p>Restricciones</p>
-        <ul>
-            <li>RX1. Acceso restringido a administradores: Solo los usuarios con rol de administrador pueden agregar, modificar o eliminar eventos en el sistema. Esta restricción debe estar validada por el sistema de permisos de usuario.</li>
-            <li>RX2. Acceso restringido para registro de desempeño: Solo los instructores asignados a un evento pueden ingresar y modificar los datos de desempeño de los competidores en las sesiones de ese evento.</li>
-            <li>RX3. Autenticación obligatoria: Todos los usuarios deben autenticarse mediante un sistema de usuario y contraseña válidos antes de acceder a cualquier funcionalidad del sistema.</li>
-        </ul>
-        <p>DIAGRAMA UML</p>
-        <p>MODELO DE DOMINIO</p>
-        <p>Diagrama</p>
-        <p>Descripción generada automáticamente</p>
+    
+    <!-- Entregable 0 -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Entregable 0</h2>
+            <div class="section-content">
+                <p><strong>Nombre del proyecto:</strong></p>
+                <p><strong>Descripción del proyecto:</strong></p>
+                <p><strong>Visión del producto:</strong> Crear un sistema que facilite la organización, registro y monitoreo de eventos deportivos...</p>
+                <p><strong>Perspectiva del producto:</strong> El sistema será una plataforma que centralizará la información de eventos deportivos...</p>
+                
+                <h3>Funciones del producto</h3>
+                <ul>
+                    <li>Registro de nuevos eventos y sesiones.</li>
+                    <li>Administración de competidores y sus historiales.</li>
+                    <!-- Otros elementos de la lista -->
+                </ul>
+                
+                <h3>Objetivos del proyecto</h3>
+                <ul>
+                    <li>Facilitar el registro de eventos deportivos y la inscripción de competidores.</li>
+                    <!-- Otros elementos de la lista -->
+                </ul>
+                
+                <h3>Definición de Stakeholders</h3>
+                <ul>
+                    <li>Cliente: Club de leones</li>
+                    <!-- Otros elementos de la lista -->
+                </ul>
+            </div>
+        </div>
     </section>
-    <section>
-        <h2>Entregable 1</h2>
-        <p>Alex alex alex.</p>
+
+    <!-- Entregable 1 -->
+    <section class="section bg-white">
+        <div class="container">
+            <h2 class="section-title">Entregable 1</h2>
+            <p>Alex alex alex.</p>
+        </div>
     </section>
-    <section>
-        <h2>Entregable 2</h2>
-        <p>Descripción del segundo entregable.</p>
+
+    <!-- Entregable 2 -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Entregable 2</h2>
+            <p>Descripción del segundo entregable.</p>
+        </div>
     </section>
-    <section>
-        <h2>Entregable 3</h2>
-        <p>Descripción del tercer entregable.</p>
+
+    <!-- Entregable 3 -->
+    <section class="section bg-white">
+        <div class="container">
+            <h2 class="section-title">Entregable 3</h2>
+            <p>Descripción del tercer entregable.</p>
+        </div>
     </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
