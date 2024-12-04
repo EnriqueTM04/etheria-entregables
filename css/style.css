@@ -193,7 +193,7 @@ ul li strong {
 }
 
 .diagram-content {
-    width: 45%;
+    width: 70%;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -209,8 +209,11 @@ ul li strong {
 }
 
 .diagram-image {
-    max-width: 100%;
+    width: 500rem;
     border-radius: 10px;
+}
+.hip-iamge{
+    width: 500rem;
 }
 
 .diagram-description {
