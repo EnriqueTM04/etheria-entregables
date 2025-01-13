@@ -28,7 +28,7 @@
             </div>
         </div>
     </nav>
-    
+
     <!-- Hero Section -->
     <div class="hero">
         <div>
@@ -45,11 +45,83 @@
         <div class="row mb-4">
             <div class="col-12">
                 <div class="card animated-card" data-animate="fadeInUp">
+                    <img src="/img/inicioSesion.png" class="card-img-top" alt="Inicio de sesión">
+
+                    <div class="card-body">
+                        <h4 class="card-title">Inicio de Sesión</h4>
+                        <p class="card-text">Esta vista permite a los usuarios iniciar sesión en el sistema ingresando
+                            sus credenciales. Es el primer paso para acceder a las funcionalidades del sistema.</p>
+                        <p class="card-title text-primary">Prueba de Aceptación</p>
+                        <ol>
+                            <li>Ingresar un usuario y contraseña válidos.</li>
+                            <li>Hacer clic en el botón "Iniciar sesión".</li>
+                            <li>Confirmar que se redirige al menú principal si las credenciales son correctas.</li>
+                            <li>Verificar que se muestra un mensaje de error en caso de credenciales incorrectas.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card animated-card" data-animate="fadeInUp">
+                    <img src="/img/registro.png" class="card-img-top" alt="Registro de usuario">
+
+                    <div class="card-body">
+                        <h4 class="card-title">Registro de Usuario</h4>
+                        <p class="card-text">Esta vista permite registrar nuevos usuarios en el sistema proporcionando
+                            información personal básica y credenciales.</p>
+                        <p class="card-title text-primary">Prueba de Aceptación</p>
+                        <ol>
+                            <li>Acceder a la vista de registro.</li>
+                            <li>Completar todos los campos requeridos con información válida.</li>
+                            <li>Hacer clic en el botón "Registrar".</li>
+                            <li>Verificar que el usuario es creado y recibe un mensaje de confirmación.</li>
+                            <li>Intentar registrar un usuario con información incompleta y verificar que se muestra un
+                                mensaje de error.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card animated-card" data-animate="fadeInUp">
+                    <img src="/img/menu.png" class="card-img-top" alt="Menú principal">
+
+                    <div class="card-body">
+                        <h4 class="card-title">Menú Principal</h4>
+                        <p class="card-text">Esta vista sirve como punto de acceso a las principales funcionalidades del
+                            sistema, mostrando opciones como gestión de eventos, usuarios y configuración.</p>
+                        <p class="card-title text-primary">Prueba de Aceptación</p>
+                        <ol>
+                            <li>Iniciar sesión como usuario válido.</li>
+                            <li>Confirmar que se muestra el menú principal con todas las opciones disponibles.</li>
+                            <li>Seleccionar una opción (por ejemplo, "Gestión de eventos") y verificar que redirige a la
+                                vista correspondiente.</li>
+                            <li>Verificar que las opciones no accesibles están deshabilitadas según el rol del usuario.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Card 1 (ejemplo)-->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card animated-card" data-animate="fadeInUp">
                     <img src="/img/eventos.png" class="card-img-top" alt="Lista de Competidores">
-                    
+
                     <div class="card-body">
                         <h4 class="card-title">Lista de Eventos registrados</h4>
-                        <p class="card-text">Esta vista muestra la lista de eventos registrados en el sistema. Permite editar, eliminar y agregar evento.</p>
+                        <p class="card-text">Esta vista muestra la lista de eventos registrados en el sistema. Permite
+                            editar, eliminar y agregar evento.</p>
                         <p class="card-title text-primary">Prueba de Aceptación</p>
                         <ol>
                             <li>Iniciar sesión como Organizador.</li>
@@ -62,26 +134,26 @@
             </div>
         </div>
 
-                <!-- Card 2 -->
-                <div class="row mb-4">
-                    <div class="col-12">
-                        <div class="card animated-card" data-animate="fadeInUp">
-                            <img src="/img/agregarEvento.png" class="card-img-top" alt="Lista de Competidores">
-                            
-                            <div class="card-body">
-                                <h4 class="card-title">AgregarEvento</h4>
-                                <p class="card-text">Esta vista muestra la opcion de agregar Evento.</p>
-                                <p class="card-title text-primary">Prueba de Aceptación</p>
-                                <ol>
-                                    <li>Iniciar sesión como Organizador.</li>
-                                    <li>Verificar que se muestra los campos correctos.</li>
-                                    <li>Llenar el formulario y guardar el evento.</li>
-                                    <li>Confirmar que los cambios se reflejen correctamente.</li>
-                                </ol>
-                            </div>
-                        </div>
+        <!-- Card 2 -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card animated-card" data-animate="fadeInUp">
+                    <img src="/img/agregarEvento.png" class="card-img-top" alt="Lista de Competidores">
+
+                    <div class="card-body">
+                        <h4 class="card-title">AgregarEvento</h4>
+                        <p class="card-text">Esta vista muestra la opcion de agregar Evento.</p>
+                        <p class="card-title text-primary">Prueba de Aceptación</p>
+                        <ol>
+                            <li>Iniciar sesión como Organizador.</li>
+                            <li>Verificar que se muestra los campos correctos.</li>
+                            <li>Llenar el formulario y guardar el evento.</li>
+                            <li>Confirmar que los cambios se reflejen correctamente.</li>
+                        </ol>
                     </div>
                 </div>
+            </div>
+        </div>
 
         <!-- Card 3 -->
         <div class="row mb-4">
@@ -109,7 +181,8 @@
                     <img src="/img/sesiones.png" class="card-img-top" alt="Agregar Competidor">
                     <div class="card-body">
                         <h4 class="card-title">Sesiones</h4>
-                        <p class="card-text">Esta vista permite visualizar las sesiones creadas, se pueden editar, eliminar y registrar datos del competidor.</p>
+                        <p class="card-text">Esta vista permite visualizar las sesiones creadas, se pueden editar,
+                            eliminar y registrar datos del competidor.</p>
                         <p class="card-title text-primary">Prueba de Aceptación</p>
                         <ol>
                             <li>Mostrar la lista de los eventos.</li>
@@ -143,10 +216,12 @@
         <div class="row mb-4">
             <div class="col-12">
                 <div class="card animated-card" data-animate="fadeInUp">
-                    <img src="/img/agregarSesion_fueracalendario.png" class="card-img-top" alt="Registro de Distancia y Tiempo">
+                    <img src="/img/agregarSesion_fueracalendario.png" class="card-img-top"
+                        alt="Registro de Distancia y Tiempo">
                     <div class="card-body">
                         <h4 class="card-title">Crear sesion fuera de calendario con Instructor con Privilegios</h4>
-                        <p class="card-text">Esta vista permite a los Instructores con Privilegios agregar sesiones, incluso fuera de calendario. </p>
+                        <p class="card-text">Esta vista permite a los Instructores con Privilegios agregar sesiones,
+                            incluso fuera de calendario. </p>
                         <p class="card-title text-primary">Prueba de Aceptación</p>
                         <ol>
                             <li>Seleccionar un evento.</li>
